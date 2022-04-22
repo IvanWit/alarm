@@ -51,7 +51,7 @@ def alarm():
 		exit()
 			
 def budik():
-	print("Time to Wake up")
+	print("Budíček")
 	zvuk()
 	
 def zvuk():

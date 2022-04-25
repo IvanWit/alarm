@@ -42,15 +42,13 @@ def alarm():
 		root.after(1000, alarm)
 		if 0 in waiting:
 			waiting.remove(0)
-			budik()
+			print("Budíček")
+			zvuk()
 			
 	else:
-		budik()
+		print("Budíček")
+		zvuk()
 		exit()
-			
-def budik():
-	print("Budíček")
-	zvuk()
 	
 def zvuk():
 	zvuk1 = AudioSegment.from_mp3("C:/Users/42060/Desktop/pgs/a.mp3")

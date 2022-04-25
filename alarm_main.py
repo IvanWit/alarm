@@ -4,7 +4,6 @@ import datetime
 from pydub import AudioSegment
 from pydub.playback import _play_with_simpleaudio
 import random
-from threading import *
 import time
 
 root = Tk()

@@ -49,7 +49,7 @@ def alarm():
 		print("Budíček")
 		zvuk()
 		exit()
-	
+			
 def zvuk():
 	zvuk1 = AudioSegment.from_mp3("C:/Users/42060/Desktop/pgs/a.mp3")
 	zvuk2 = AudioSegment.from_mp3("C:/Users/42060/Desktop/pgs/b.mp3")

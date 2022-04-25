@@ -18,7 +18,6 @@ def set():
 	curr = int(cas.hour)*3600 + int(cas.minute)*60 + int(cas.second)
 	if (user - curr) < 0:
 		set_alarm_time = (86400 - abs(user - curr))
-		print((user-curr))
 	else :
 		set_alarm_time = abs(user - curr)
 	seznam()

@@ -51,15 +51,15 @@ def alarm():
 		exit()
 			
 def zvuk():
-	zvuk1 = AudioSegment.from_mp3("a.mp3")
-	zvuk2 = AudioSegment.from_mp3("b.mp3")
-	zvuk3 = AudioSegment.from_mp3("c.mp3")
-	zvuk4 = AudioSegment.from_mp3("d.mp3")
-	zvuk5 = AudioSegment.from_mp3("e.mp3")
+	zvuk1 = AudioSegment.from_mp3("C:/Users/42060/Desktop/pgs/a.mp3")
+	zvuk2 = AudioSegment.from_mp3("C:/Users/42060/Desktop/pgs/b.mp3")
+	zvuk3 = AudioSegment.from_mp3("C:/Users/42060/Desktop/pgs/c.mp3")
+	zvuk4 = AudioSegment.from_mp3("C:/Users/42060/Desktop/pgs/d.mp3")
+	zvuk5 = AudioSegment.from_mp3("C:/Users/42060/Desktop/pgs/e.mp3")
 	zvuky = [zvuk1, zvuk2, zvuk3, zvuk4, zvuk5]
 	pogzvuk = random.choice(zvuky)
 	x = _play_with_simpleaudio(pogzvuk)
-	time.sleep(30)
+	time.sleep(15)
 	x.stop()
 	if not waiting:
 		exit()

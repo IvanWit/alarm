@@ -51,11 +51,11 @@ def alarm():
 		exit()
 			
 def zvuk():
-	zvuk1 = AudioSegment.from_mp3("C:/Users/42060/Desktop/pgs/a.mp3")
-	zvuk2 = AudioSegment.from_mp3("C:/Users/42060/Desktop/pgs/b.mp3")
-	zvuk3 = AudioSegment.from_mp3("C:/Users/42060/Desktop/pgs/c.mp3")
-	zvuk4 = AudioSegment.from_mp3("C:/Users/42060/Desktop/pgs/d.mp3")
-	zvuk5 = AudioSegment.from_mp3("C:/Users/42060/Desktop/pgs/e.mp3")
+	zvuk1 = AudioSegment.from_mp3("a.mp3")
+	zvuk2 = AudioSegment.from_mp3("b.mp3")
+	zvuk3 = AudioSegment.from_mp3("c.mp3")
+	zvuk4 = AudioSegment.from_mp3("d.mp3")
+	zvuk5 = AudioSegment.from_mp3("e.mp3")
 	zvuky = [zvuk1, zvuk2, zvuk3, zvuk4, zvuk5]
 	pogzvuk = random.choice(zvuky)
 	x = _play_with_simpleaudio(pogzvuk)
@@ -65,7 +65,7 @@ def zvuk():
 		exit()
 
 Label(root,text="Budík",font=("Helvetica 20 bold"),fg="red").pack(pady=10)
-Label(root,text="Zadejte čas",font=("Helvetica 15 bold")).pack()
+Label(root,text="Zadejte čas",font=("Helvetica 15 bold")).pack(pady=15)
 
 frame = Frame(root)
 frame.pack()
@@ -79,6 +79,6 @@ minTime= Entry(root,textvariable = min,bg = "pink",width = 15).place(x=150,y=45)
 secTime = Entry(root,textvariable = sec,bg = "pink",width = 15).place(x=200,y=45)
 
 tlacitko = Button(root,text="Zapnout budík",font=("Helvetica 15"), command=set)
-tlacitko.pack(pady=20)
+tlacitko.pack(pady=5)
 
 root.mainloop()
